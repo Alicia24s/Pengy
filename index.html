@@ -3,46 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raspberry Pi Camera Stream</title>
-    <style>
-        /* Style the video container */
-        #video-container {
-            position: relative;
-        }
-        /* Style the video element */
-        video {
-            width: 100%;
-        }
-        /* Style the progress bar */
-        progress {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Interactive Web Server</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="video-container">
-        <video id="camera-feed" autoplay></video>
-        <progress value="0" max="100"></progress>
+    <div class="container">
+        <h1>Progress Bar</h1>
+        <div class="progress-bar">
+            <!-- Add your progress bar checkpoints here -->
+            <div class="checkpoint"></div>
+            <!-- Repeat for other checkpoints -->
+        </div>
+        <div class="camera-feed">
+            <img src="placeholder.jpg" alt="Camera Feed">
+        </div>
+        <div class="translucent-image">
+            <img src="translucent.png" alt="Translucent Image">
+        </div>
     </div>
-    <script>
-        // JavaScript to handle camera feed and progress bar
-        const videoElement = document.getElementById('camera-feed');
-        const progressBar = document.querySelector('progress');
-
-        // Replace with your camera stream URL
-        const cameraStreamURL = 'http://your-raspberry-pi-ip:8000/stream.mjpg';
-
-        videoElement.src = cameraStreamURL;
-
-        // Update progress bar (example: every 5 seconds)
-        setInterval(() => {
-            // Replace with your logic to calculate progress
-            const progressPercentage = Math.random() * 100;
-            progressBar.value = progressPercentage;
-        }, 5000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
