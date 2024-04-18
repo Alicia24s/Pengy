@@ -1,0 +1,72 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("images/Bubbles.jpg");
+
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+}
+
+#stepProgressBar{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.step{
+    text-align: center;
+}
+
+.step-text{
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+.bullet{
+    height: 20;
+    width: 20px;
+    border-radius: 100%;
+    border: 1px solid #a728a3;
+    color: purple;
+    display: inline-block;
+    position: relative;
+    transition: background-color 500ms;
+    line-height: 20px;
+}
+
+.bullet.completed{
+    color: antiquewhite;
+    background-color: aquamarine;
+}

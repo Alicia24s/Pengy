@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <head>
+          
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
 
-* {
-  box-sizing: border-box;
-}
+    </head>
 
-.bg-image {
-  /* The image used */
-  background-image: url("images/Bubbles.jpg");
-  
-  /* Add the blur effect */
-  filter: blur(10px);
-  -webkit-filter: blur(5px);
-  
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-</style>
-</head>
-<body>
+    <body>
 
-<div class="bg-image"></div>
+      <!--<div class="bg-image"></div>-->
 
-</body>
+      <div class="container">
+         <div id ="stepProgressBar">
+
+          <div class ="step">
+               <p class="step-text">Step-1</p>
+              <div class="bullet">1</div>
+          </div>
+        
+          <div class ="step">
+            <p class="step-text">Step-2</p>
+           <div class="bullet">2</div>
+          </div>
+
+          <div class ="step">
+             <p class="step-text">Step-3</p>
+            <div class="bullet">3</div>
+          </div>
+
+           <div class ="step">
+             <p class="step-text">Step-4</p>
+              <div class="bullet">4</div>
+          </div>
+            
+          <div class ="step">
+            <p class="step-text">Step-5</p>
+           <div class="bullet">5</div>
+       </div>
+
+       <div class ="step">
+        <p class="step-text">Step-6</p>
+       <div class="bullet">6</div>
+        </div>
+
+         <div class ="step">
+         <p class="step-text">Step-7</p>
+        <div class="bullet">7</div>
+        </div>
+
+        <div class ="step">
+        <p class="step-text">Step-8</p>
+        <div class="bullet">8</div>
+        </div>
+
+
+      </div>   
+      
+      <div id="main">
+          <p id="content"> Step number 1: </p>>
+      </div>
+
+      <script src="js.js"></script>
+      
+    </body>
+
+
 </html>
