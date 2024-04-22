@@ -20,6 +20,31 @@ div.solid{
 
 }
 
+.solid2 {
+    background-color: rgb(155, 137, 214);
+    border-color: rgb(47, 48, 104);
+    border-style: solid;
+    border-radius: 10%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    bottom: 30px; /* adjust this value to change the margin from the bottom */
+    left: 30px; /* adjust this value to change the margin from the left */
+  }
+
+.solid3{
+    background-color: rgb(155, 137, 214);
+    border-color: rgb(47, 48, 104);
+    border-style: solid;
+    border-radius: 10%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    bottom: 30px; /* adjust this value to change the margin from the bottom */
+    right: 30px; /* adjust this value to change the margin from the left */
+}
+
+
 * {
   box-sizing: border-box;
 }
