@@ -15,7 +15,7 @@ body, html {
 
 
 div.solid{
-    background-color: white;
+  background-color: rgb(168, 177, 190);
     border-style: solid;
 
 }
