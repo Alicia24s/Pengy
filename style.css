@@ -13,6 +13,13 @@ body, html {
 
 }
 
+
+div.solid{
+    background-color: white;
+    border-style: solid;
+
+}
+
 * {
   box-sizing: border-box;
 }
